@@ -33,6 +33,12 @@ var recruitObj = {
                     $(this).addClass('current');
                     $('#social-nav-bar').stop().animate({'left': (60 + $(this).index() * $(this).width()) + 'px'}, 500)
                 })
+
+                $('.social-job-item').mouseenter(function(){
+                    $(this).find('.job-request').stop().slideDown();
+                }).mouseleave(function(){
+                    $(this).find('.job-request').stop().slideUp();
+                })
             }
 
             function initSchoolBox(){
