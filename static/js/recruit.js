@@ -26,14 +26,14 @@ var recruitObj = {
                     if(largeIndex != 2){
                         $('#job-personnel-box').hide();
                         if(largeIndex == 1){
-                            $('#progress-div').stop().slideDown();
+                            $('#progress-div').show();
                         }else{
                             $('#progress-div').hide();
                         }
-                        $('#job-social-box').stop().slideDown();
+                        $('#job-social-box').show();
                     }else{
                         $('#job-social-box').hide();
-                        $('#job-personnel-box').stop().slideDown();
+                        $('#job-personnel-box').show();
                     }
                 })
             }
