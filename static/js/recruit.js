@@ -19,7 +19,22 @@ var recruitObj = {
                     });
 
                     $(this).addClass('current');
-                    $('#recruit-point').stop().animate({'left': (185 + $(this).index() * $(this).width()) + 'px'}, 500)
+                    $('#recruit-point').stop().animate({'left': (185 + $(this).index() * $(this).width()) + 'px'}, 500);
+
+                    $('.job-big-box').stop().slideUp();
+                    var largeIndex = $(this).index();
+
+                    if(largeIndex != 2){
+                        $('#job-social-box').show();
+
+                        if(largeIndex == 1){
+                            $('#progress-div').show();
+                        }else{
+                            $('#progress-div').hide();
+                        }
+                    }else{
+                        $('#job-social-box').hide();
+                    }
                 })
             }
 
