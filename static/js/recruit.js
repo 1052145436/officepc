@@ -34,10 +34,12 @@ var recruitObj = {
                     $('#social-nav-bar').stop().animate({'left': (60 + $(this).index() * $(this).width()) + 'px'}, 500)
                 })
 
-                $('.social-job-item').mouseenter(function(){
-                    $(this).find('.job-request').stop().slideDown();
-                }).mouseleave(function(){
-                    $(this).find('.job-request').stop().slideUp();
+                $('.social-job-item').click(function(){
+                    if($(this).find('.job-request').is(':hidden') == true){
+                        $(this).find('.job-request').stop().slideDown();
+                    }else{
+                        $(this).find('.job-request').stop().slideUp();
+                    }
                 })
             }
 
