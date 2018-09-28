@@ -5,13 +5,12 @@
     <title>供应商链入驻</title>
     <meta name="keywords" content="尧祺,Blobal,B2C,b2c,B2c,b2C,yaoqi,跨境,贸易,B2C,电子商务"/>
     <meta name="description" content="Global电子商务有限公司（简称Global）是一家专注于跨境贸易B2C电子商务公司。/">
-    <link rel="icon" href="../static/images/common/favicon.ico" mce_href="../static/images/common/favicon.ico"
-          type="image/x-icon">
+    <link rel="icon" href="../static/images/common/favicon.ico" mce_href="../static/images/common/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../static/less/main.less"/>
     <link rel="stylesheet" href="../static/css/element.min.css">
 </head>
 <body>
-<div class="supplier-wapper" id="supplierPage">
+<div class="supplier-wapper" id="supplierIndex">
     <div class="supplier-inner">
         <img src="../static/images/supplier/supplier_bg.jpg" alt="" class="intro_bg1">
         <link rel="import" href="../module/commonHead.html?__inline">
@@ -28,28 +27,23 @@
                             <div class="process-blue"></div>
                             <ul>
                                 <li>
-                                    <img src="../static/images/common/px-pic.png"
-                                         data-src="../static/images/recruit/circle_1.png" alt="" class="lazyload">
+                                    <img src="../static/images/common/px-pic.png" data-src="../static/images/recruit/circle_1.png" alt="" class="lazyload">
                                     <p>提交申请</p>
                                 </li>
                                 <li>
-                                    <img src="../static/images/common/px-pic.png"
-                                         data-src="../static/images/recruit/circle_2.png" alt="" class="lazyload">
+                                    <img src="../static/images/common/px-pic.png" data-src="../static/images/recruit/circle_2.png" alt="" class="lazyload">
                                     <p>招商洽谈</p>
                                 </li>
                                 <li>
-                                    <img src="../static/images/common/px-pic.png"
-                                         data-src="../static/images/recruit/circle_3.png" alt="" class="lazyload">
+                                    <img src="../static/images/common/px-pic.png" data-src="../static/images/recruit/circle_3.png" alt="" class="lazyload">
                                     <p>合作确定</p>
                                 </li>
                                 <li>
-                                    <img src="../static/images/common/px-pic.png"
-                                         data-src="../static/images/recruit/circle_4.png" alt="" class="lazyload">
+                                    <img src="../static/images/common/px-pic.png" data-src="../static/images/recruit/circle_4.png" alt="" class="lazyload">
                                     <p>产品销售</p>
                                 </li>
                                 <li>
-                                    <img src="../static/images/common/px-pic.png"
-                                         data-src="../static/images/recruit/circle_5.png" alt="" class="lazyload">
+                                    <img src="../static/images/common/px-pic.png" data-src="../static/images/recruit/circle_5.png" alt="" class="lazyload">
                                     <p>订单处理</p>
                                 </li>
                             </ul>
@@ -61,91 +55,90 @@
                     <div class="social-detail">
                         <div class="social-nav-box">
                             <ul class="socail-nav" id="socail-nav">
-                                <li v-for="navName in navList" @click="navClickFunc(navName)"
-                                    :class="{current: activeName == navName}">{{navName}}
-                                </li>
+                                <li class="current">基础信息</li>
+                                <li>联系方式</li>
+                                <li>资质证明</li>
+                                <li>供应商概况</li>
                             </ul>
                             <div class="social-nav-bar" id="social-nav-bar"></div>
                         </div>
                         <div class="form-info">
                             <div class="horse-box">
-                                <el-form :label-width="labelWidth" v-if="activename == navList[0]">
-                                    <el-form-item label="公司电话：" required>
-                                        <el-input></el-input>
-                                    </el-form-item>
-                                    <el-form-item label="法人/经营者：" required>
-                                        <el-input></el-input>
-                                    </el-form-item>
-                                    <el-form-item label="统一社会信用代码/注册号：" required>
-                                        <el-input></el-input>
-                                    </el-form-item>
-                                    <el-form-item label="公司成立时间：" required>
-                                        <el-input></el-input>
-                                    </el-form-item>
-                                    <el-form-item label="公司地址：" required>
-                                        <el-input></el-input>
-                                    </el-form-item>
-                                    <el-form-item label="公司简历：" required>
-                                        <el-input></el-input>
-                                    </el-form-item>
-                                </el-form>
-                                <el-form :label-width="labelWidth" v-if="activename == navList[1]">
-                                    <el-form-item label="联系人姓名：" required>
-                                        <el-input></el-input>
-                                    </el-form-item>
-                                    <el-form-item label="联系人座机电话：" required>
-                                        <el-input></el-input>
-                                    </el-form-item>
-                                    <el-form-item label="联系人手机号码：" required>
-                                        <el-input></el-input>
-                                    </el-form-item>
-                                    <el-form-item label="联系人邮箱地址：" required>
-                                        <el-input></el-input>
-                                    </el-form-item>
-                                    <el-form-item label="联系人QQ：" required>
-                                        <el-input></el-input>
-                                    </el-form-item>
-                                </el-form>
-                                <el-form :label-width="labelWidth" v-if="activename == navList[]">
-                                    <el-form-item label="营业执照：" required>
-                                        <el-input></el-input>
-                                    </el-form-item>
-                                    <el-form-item label="规模类型：" required>
-                                        <el-input></el-input>
-                                    </el-form-item>
-                                    <el-form-item label="供应商类型：" required>
-                                        <el-input></el-input>
-                                    </el-form-item>
-                                    <el-form-item label="从业人数：" required>
-                                        <el-input></el-input>
-                                    </el-form-item>
-                                    <el-form-item label="是否为长期经营：" required>
-                                        <el-input></el-input>
-                                    </el-form-item>
-                                </el-form>
-                                <el-form :label-width="labelWidth">
-                                    <el-form-item label="主要经营类目：" required>
-                                        <el-input></el-input>
-                                    </el-form-item>
-                                    <el-form-item label="合作过的电商平台：" required>
-                                        <el-input></el-input>
-                                    </el-form-item>
-                                    <el-form-item label="主要销售国家和地区：" required>
-                                        <el-input></el-input>
-                                    </el-form-item>
-                                    <el-form-item label="正在合作的电商平台：" required>
-                                        <el-input></el-input>
-                                    </el-form-item>
-                                    <el-form-item label="最近一年销售金额：" required>
-                                        <el-input></el-input>
-                                    </el-form-item>
-                                    <el-form-item label="每月产品上新数量：" required>
-                                        <el-input></el-input>
-                                    </el-form-item>
-                                    <el-form-item label="经营商品图片上传：" required>
-                                        <el-input></el-input>
-                                    </el-form-item>
-                                </el-form>
+                                <ul>
+                                    <li><label><i>*</i>公司电话：</label><input type="text" placeholder="请输入"></li>
+                                    <li><label><i>*</i>法人/经营者：</label><input type="text" placeholder="请输入"></li>
+                                    <li><label><i>*</i>统一社会信用代码/注册号：</label><input type="text" placeholder="请输入"></li>
+                                    <li><label><i>*</i>公司成立时间：</label><input type="text" placeholder="请输入"></li>
+                                    <li><label><i>*</i>公司地址：</label><input type="text" placeholder="请输入"></li>
+                                    <li><label><i>*</i>公司简历：</label><input type="text" placeholder="请输入"></li>
+                                </ul>
+                            </div>
+                            <div class="horse-box">
+                                <ul>
+                                    <li><label><i>*</i>联系人姓名：</label><input type="text" placeholder="请输入"></li>
+                                    <li><label>联系人座机电话：</label><input type="text" placeholder="请输入"></li>
+                                    <li><label><i>*</i>联系人手机号码：</label><input type="text" placeholder="请输入"></li>
+                                    <li><label><i>*</i>联系人邮箱地址：</label><input type="text" placeholder="请输入"></li>
+                                    <li><label><i>*</i>联系人QQ：</label><input type="text" placeholder="请输入"></li>
+                                </ul>
+                            </div>
+                            <div class="horse-box">
+                                <ul>
+                                    <li><label><i>*</i>营业执照：</label>
+                                        <div class="upload-box">
+                                            <img src="../static/images/common/px-pic.png" data-src="../static/images/recruit/upload.png" alt="" class="lazyload">
+                                            <span>上传文件</span>
+                                        </div></li>
+                                    <li><label><i>*</i>规模类型：</label><input type="text" placeholder="请输入"></li>
+                                    <li><label><i>*</i>供应商类型：</label><input type="text" placeholder="请输入"></li>
+                                    <li><label><i>*</i>从业人数：</label><input type="text" placeholder="请输入"></li>
+                                    <li><label><i>*</i>是否为长期经营：</label><input type="text" placeholder="请输入"></li>
+                                </ul>
+                            </div>
+                            <div class="horse-box">
+                                <ul>
+                                    <li><label><i>*</i>主要经营类目：</label>
+                                        <div class="check-box">
+                                            <input type="checkbox" value="男装">
+                                            <input type="checkbox" value="男鞋">
+                                            <input type="checkbox" value="男包">
+                                            <input type="checkbox" value="女装">
+                                            <input type="checkbox" value="女鞋">
+                                            <input type="checkbox" value="女包">
+                                            <input type="checkbox" value="配饰">
+                                            <input type="checkbox" value="婴童">
+                                            <input type="checkbox" value="玩具">
+                                            <input type="checkbox" value="美妆">
+                                            <input type="checkbox" value="家居服">
+                                            <input type="checkbox" value="家居装饰">
+                                            <input type="checkbox" value="生活用品">
+                                            <input type="checkbox" value="餐具&收纳">
+                                            <input type="checkbox" value="床品&浴室用品">
+                                            <input type="checkbox" value="手机&数码">
+                                            <input type="checkbox" value="家用电器">
+                                            <input type="checkbox" value="运动服饰">
+                                            <input type="checkbox" value="运动配饰">
+                                            <input type="checkbox" value="运动鞋">
+                                            <input type="checkbox" value="内衣">
+                                            <input type="checkbox" value="婚纱">
+                                            <input type="checkbox" value="婴童用品">
+                                            <input type="checkbox" value="童装">
+                                            <input type="checkbox" value="婚庆用品">
+                                        </div>
+                                    </li>
+                                    <li><label>合作过的电商平台：</label><input type="text" placeholder="请输入"></li>
+                                    <li><label><i>*</i>主要销售国家和地区：</label><input type="text" placeholder="请输入"></li>
+                                    <li><label>正在合作的电商平台：</label><input type="text" placeholder="请输入"></li>
+                                    <li><label>最近一年销售金额：</label><input type="text" placeholder="请输入"></li>
+                                    <li><label><i>*</i>每月产品上新数量：</label><input type="text" placeholder="请输入"></li>
+                                    <li>
+                                        <label><i>*</i>经营商品图片上传：</label>
+                                        <div class="upload-box">
+                                            <img src="../static/images/common/px-pic.png" data-src="../static/images/recruit/upload.png" alt="" class="lazyload">
+                                            <span>上传文件</span>
+                                        </div>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -160,29 +153,18 @@
 <script src="../static/plugins/vue.min.js"></script>
 <script src="../static/plugins/element.min.js"></script>
 <script type="text/javascript">
-    require(['../static/js/supplier'], function (supplierJS) {
+    require(['../static/js/supplier'],function(supplierJS){
         supplierJS.supplierObj.init();
     })
 </script>
 
 <script type="text/javascript">
     new Vue({
-        el: '#supplierPage',
+        el: '#supplierIndex',
         data() {
-            return {
-                labelWidth: '200px',
-                navList: ['基础信息', '联系方式', '资质证明', '供应商概况'],
-                activeName: '',
-            }
+            return {}
         },
-        methods: {
-            navClickFunc(navName) {
-                this.activeName = navName;
-            }
-        },
-        mounted() {
-            this.activeName = this.navList[0];
-        }
+        methods: {}
     })
 </script>
 

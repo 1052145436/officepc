@@ -8,8 +8,6 @@ var supplierObj = {
             commonJS.commonObj.initLazyload();
             commonJS.commonObj.defaultChooseNav(4);
             initSocailBox();
-            initSchoolBox();
-            initPersonelBox();
 
             function initSocailBox(){
                 $('#socail-nav>li').on('click', function () {
@@ -20,22 +18,6 @@ var supplierObj = {
                     $(this).addClass('current');
                     $('#social-nav-bar').stop().animate({'left': (60 + $(this).index() * $(this).width()) + 'px'}, 500)
                 })
-
-                $('.social-job-item').click(function(){
-                    if($(this).find('.job-request').is(':hidden') == true){
-                        $(this).find('.job-request').stop().slideDown();
-                    }else{
-                        $(this).find('.job-request').stop().slideUp();
-                    }
-                })
-            }
-
-            function initSchoolBox(){
-
-            }
-
-            function initPersonelBox(){
-
             }
         })
     }
