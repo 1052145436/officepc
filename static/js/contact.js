@@ -29,6 +29,7 @@ var contactObj = {
                     pointArray[i] = new BMap.Point(json_data[i][0], json_data[i][1]);
                     var content = json_data[i][2];
                     addClickHandler(content,marker);
+                    marker.setAnimation(BMAP_ANIMATION_BOUNCE); //跳动的动画
                 }        //让所有点在视野范围内
                 map.setViewport(pointArray);
                 function addClickHandler(content,marker){
@@ -45,7 +46,6 @@ var contactObj = {
                     map.panTo(new BMap.Point(x,y));
                 }
 
-                marker.setAnimation(BMAP_ANIMATION_BOUNCE); //跳动的动画
                 map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
 
                 var top_left_control = new BMap.ScaleControl({anchor: BMAP_ANCHOR_TOP_LEFT});// 左上角，添加比例尺
