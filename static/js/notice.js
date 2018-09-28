@@ -7,6 +7,14 @@ var noticeObj = {
             commonJS.commonObj.init();
             commonJS.commonObj.initLazyload();
             commonJS.commonObj.defaultChooseNav(4);
+
+            $('#reset-btn').click(function(){
+                window.close();
+            });
+
+            $('#agreen-btn').click(function(){
+                window.close();
+            });
         })
     }
 }
