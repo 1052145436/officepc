@@ -186,7 +186,7 @@
                     font-weight: 200;
                   }
 
-                  input{
+                  input[type='text']{
                     display:block;
                     width:624px;
                     height:22px;
@@ -220,21 +220,15 @@
                     caret-color:#e00;
                   }
 
-                  .check-box{
-                    position:relative;
-                    width:138px;
-                    height:auto;
-                  }
-
                   .upload-box{
                     position:relative;
                     width:138px;
                     height:28px;
                     line-height:28px;
                     border:1px solid #c9c9c9;
-                    -webkit-border-radius: 10px;
-                    -moz-border-radius: 10px;
-                    border-radius: 10px;
+                    -webkit-border-radius: 5px;
+                    -moz-border-radius: 5px;
+                    border-radius: 5px;
                     float:left;
                     margin-top:15px;
                     background-color: #fff;
@@ -257,6 +251,27 @@
                       color:#c9c9c9;
                       font-weight:100;
                     }
+                  }
+                }
+              }
+              .check-box{
+                width:700px;
+                height:auto;
+                float:left;
+                padding-top:10px;
+                label{
+                  display:block;
+                  width:200px;
+                  height:30px;
+                  line-height:30px;
+                  text-align:left;
+                  margin-bottom:20px;
+                  float:left;
+                  font-weight:100;
+                  color:#000;
+                  cursor:pointer;
+                  input{
+                    margin-right:5px;
                   }
                 }
               }
