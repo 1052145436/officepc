@@ -52,7 +52,11 @@
                     </li>
                 </ul>
             </div>
-            <img src="../static/images/common/px-pic.png" data-src="../static/images/contact/map.jpg" alt="" class="map-img lazyload">
+            <!--<img src="../static/images/common/px-pic.png" data-src="../static/images/contact/map.jpg" alt="" class="map-img lazyload">-->
+            <div class="clearfix"></div>
+            <div class="contact_m_Right">
+                <div id="allmap"></div>
+            </div>
             <div class="clearfix"></div>
         </div>
     </div>
@@ -65,7 +69,7 @@
 
 <script src="../static/plugins/mod.js"></script>
 <script src="../static/plugins/jquery.js"></script>
-
+<script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=YIxOPDQWpDyxGGeNsCP8fvFZgxg6iQaz"></script>
 <script type="text/javascript">
     require(['../static/js/contact'],function(contactJS){
         contactJS.contactObj.init();
