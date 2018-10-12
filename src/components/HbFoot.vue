@@ -214,6 +214,7 @@
                         em{
                             font-size:25px;
                             font-weight:400;
+                            font-style:normal;
                         }
 
                         &:hover{
